@@ -1,0 +1,5 @@
+videos/*
+run/*
+images/*
+.venv/
+py_log.log
