@@ -86,6 +86,7 @@ async def predictor(df):
                     print(await stop_line(
                         next((i for i, sublist in enumerate(grouped_objects) if sublist[0] == 'stop'), None),
                         next((i for i, sublist in enumerate(grouped_objects) if sublist[0] == 'car'), None)), df)
+    df.to_csv('output.csv', index=False)
 
 
 async def sline(x, x_old, df):
